@@ -6,7 +6,7 @@ const userSocketMap = {}; // { userId: socketId }
 export const initSocketIO = (server) => {
   io = new Server(server, {
     cors: {
-      origin: "http://localhost:5173", // This will use our Render environment variable
+      origin: "process.env.CORS_ORIGIN", // This will use our Render environment variable
       credentials: true,
     },
   });

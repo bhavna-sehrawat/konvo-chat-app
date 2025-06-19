@@ -22,7 +22,7 @@ const __dirname = path.resolve();
 
 // This uses our Render environment variable for CORS
 app.use(cors({
-  origin: "http://localhost:5173",
+  origin: "process.env.CORS_ORIGIN",
   credentials: true
 }));
 
