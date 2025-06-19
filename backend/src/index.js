@@ -31,7 +31,7 @@ app.use("/api/messages", messageRoutes);
 if (process.env.NODE_ENV === "production") {
   app.use(express.static(path.join(__dirname, "../frontend/dist")));
 
-  app.get(/(.*)/, (req, res) => {
+  app.get(/(.*)/, (req, res) => { // wildcard * not supported anymore, use /(.*)/
     res.sendFile(path.join(__dirname, "../frontend", "dist", "index.html"));
   });
 }
