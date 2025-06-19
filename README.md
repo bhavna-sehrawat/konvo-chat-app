@@ -2,7 +2,7 @@
 
 A feature-rich, full-stack web application designed for real-time, one-on-one messaging, demonstrating expertise in the MERN stack and WebSocket communication.
 
-### [Live Demo](https://konvo-app-prod.onrender.com/) 
+### [Live Demo](https://konvo-chat-app.onrender.com) 
 
 ---
 
